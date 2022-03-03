@@ -42,7 +42,7 @@ function AllCartItems() {
           })
         }
         <div className='d-flex justify-content-between align-items-center cart-options'>
-          <button>Continue Shopping</button>
+          <button className='continue-shopping-btn'>Continue Shopping</button>
           <a href='#'>Need Help?</a>
         </div>
     </div>
