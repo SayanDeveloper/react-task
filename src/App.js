@@ -6,7 +6,7 @@ import AllCartItems from './components/AllCartItems';
 import PriceList from './components/PriceList';
 import TagBox from './components/TagBox';
 // introjs imports
-import { Steps, Hints } from 'intro.js-react';
+import { Steps } from 'intro.js-react';
 import "intro.js/introjs.css";
 
 function App() {
