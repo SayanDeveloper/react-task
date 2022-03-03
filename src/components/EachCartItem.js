@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-function EachCartItem() {
+function EachCartItem({img, name, usd, tenure, deposit, total}) {
     const [quantity, setQuantity] = useState(1);
 
     const quantityValidator = (event) => {
@@ -21,10 +21,10 @@ function EachCartItem() {
     }
   return (
     <div className='each-item-flex'>
-        <img className='cart-item-img' src='./images/bed1.png' />
+        <img className='cart-item-img' src={`./images/${img}.png`} />
         <div className='first'>
-            <div>Royal Double Bed</div>
-            <div className='light'>$45.00</div>
+            <div>{name}</div>
+            <div className='light'>${usd}</div>
             <div className='quantity-container'>
                 <button className='minus' onClick={decreaseValidate}>-</button>
                 <input 
@@ -39,16 +39,16 @@ function EachCartItem() {
         </div>
         <div className='second'>
             <div className='light mb-2'>Tenure</div>
-            <div>12 Months</div>
+            <div>{tenure} Months</div>
         </div>
         <div className='third'>
             <div className='light mb-2'>Deposit</div>
-            <div>Rs 799</div>
+            <div>Rs {deposit}</div>
             <div className='refund'>Fully refundable</div>
         </div>
         <div className='fourth mb-2'>
             <div className='light'>Total</div>
-            <div id='total-price'>Rs 1499</div>
+            <div id='total-price'>Rs {total}</div>
         </div>
     </div>
   )
