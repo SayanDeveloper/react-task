@@ -21,7 +21,7 @@ function EachCartItem({img, name, usd, tenure, deposit, total}) {
     }
   return (
     <div className='each-item-flex'>
-        <img className='cart-item-img' src={`./images/${img}.png`} />
+        <img className='cart-item-img' src={`./images/${img}.png`} alt="cart-item-pic" />
         <div className='first'>
             <div>{name}</div>
             <div className='light'>${usd}</div>

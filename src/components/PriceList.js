@@ -1,12 +1,12 @@
 import React, {useState} from 'react';
-import {Modal, ModalFooter, ModalHeader, ModalBody} from 'reactstrap';
+import {Modal,  ModalBody} from 'reactstrap';
 
 function PriceList() {
     const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <div className='price-summary-container'>
         <button className='cen-btn'>
-            <img src='./images/gift.png' />
+            <img src='./images/gift.png' alt='gift' />
             Have a Promo Code?
         </button>
         <div className='d-flex justify-content-between'>
@@ -46,7 +46,7 @@ function PriceList() {
                 >
                     <i className='fa fa-times'></i>
                 </button>
-                <img src='./images/modalGift.png' />
+                <img src='./images/modalGift.png' alt='reward-gift' />
                 <p className='text-center'>
                     You and Your friend get 30% off upto 500 on your next months rent
                 </p>
