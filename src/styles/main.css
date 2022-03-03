@@ -126,6 +126,7 @@
 .cart-items-container .each-item-flex {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 .cart-item-img {
     width: 150px;
@@ -136,7 +137,6 @@
 }
 .cart-items-container .each-item-flex > div {
     padding-top: 20px;
-    /* border: 1px solid black; */
 }
 .cart-items-container .each-item-flex .first {
     width: 160px;
@@ -170,16 +170,18 @@
     width: 100%;
     border-radius: 25px;
     outline: none;
-    border: 1px solid black;
+    border: 1px solid #707070;
     padding-left: 15px;
     text-align: center;
+    color: #707070;
 }
 .quantity-container button {
     position: absolute;
     width: 20px;
+    color: #707070;
     background-color: white;
-    border-top: 1px solid;
-    border-bottom: 1px solid;
+    border-top: 1px solid #707070;
+    border-bottom: 1px solid #707070;
 }
 .quantity-container button.plus {
     top: 0px;
@@ -187,7 +189,7 @@
     height: 100%;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
-    border-right: 1px solid black;
+    border-right: 1px solid #707070;
 }
 .quantity-container button.minus {
     top: 0px;
@@ -195,5 +197,56 @@
     height: 100%;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
-    border-left: 1px solid black;
+    border-left: 1px solid #707070;
+}
+.cart-options {
+    margin-top: 20px;
+}
+.cart-options button {
+    height: 45px;
+    width: 250px;
+    border-radius: 5px;
+    border: 2px solid var(--place-red);
+    background-color: white;
+    color: var(--place-red);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.cart-options a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 45px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+/* tag boxes container */
+.tag-boxes-container {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.tag-boxes-container .each-box {
+    width: 30%;
+    height: 180px;
+    border-radius: 10px;
+    border: 2px solid var(--grey);
+    cursor: pointer;
+    color: var(--grey);
+    transition: all 0.2s;
+    padding: 0px 20px;
+}
+.tag-boxes-container .each-box:hover {
+    border: 2px solid var(--place-red);
+}
+.tag-boxes-container .each-box div {
+    font-weight: 500;
+    font-size: 18px;
+}
+.tag-boxes-container .each-box:hover div {
+    color: var(--place-red);
+}
+.tag-boxes-container .each-box i {
+    font-size: 50px;
+    margin-bottom: 10px;
 }
