@@ -10,6 +10,7 @@
  ## Dependencies
  - react
  - reactstrap
+ - intro.js-react
 
 ## Guide to Run the project
 - Clone this git repo
