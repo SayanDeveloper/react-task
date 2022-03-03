@@ -48,7 +48,7 @@ function EachCartItem() {
         </div>
         <div className='fourth mb-2'>
             <div className='light'>Total</div>
-            <div>Rs 1499</div>
+            <div id='total-price'>Rs 1499</div>
         </div>
     </div>
   )

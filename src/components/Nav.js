@@ -36,10 +36,10 @@ function TopNav() {
                     </button>
                 </form>
                 <NavItem>
-                    <NavLink href="#">Login</NavLink>
+                    <NavLink className='login' href="#">Login</NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink href="#">Cart</NavLink>
+                    <NavLink className='active cart' href="#">Cart</NavLink>
                 </NavItem>
             </Nav>
         </Collapse>
