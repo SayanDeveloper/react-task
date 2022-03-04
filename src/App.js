@@ -14,7 +14,11 @@ function App() {
   const [enabled, setEnabled] = useState(false);
 
   useEffect(() => {
-    setEnabled(true);
+    if (!window.localStorage.getItem("tooltip")) {
+      setEnabled(true);
+    } else {
+      setEnabled(false);
+    }
   }, []);
 
   const steps = [
@@ -35,12 +39,18 @@ function App() {
     },
   ];
 
+  const callbackExit = () => {
+    window.localStorage.setItem("tooltip", "done");
+  }
+
   return (
     <>
     <Steps
       enabled={enabled}
       steps={steps}
       initialStep={0}
+      options={{doneLabel: "done"}}
+      onComplete={callbackExit}
     />
       <Nav />
       <div className='status'>
